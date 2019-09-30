@@ -11,9 +11,9 @@ var compareImages = function(res) {
   resemble.outputSettings({
     largeImageThreshold: 0
   });
-  var diff = resemble("1.png")
-    .compareTo("2.png")
-    .ignoreColors()
+  var diff = resemble("first.png")
+    .compareTo("second.png")
+    .ignoreLess()
     .onComplete(function(data) {
       console.log(data);
       var png = data.getDiffImage();

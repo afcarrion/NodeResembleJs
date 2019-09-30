@@ -16,6 +16,7 @@ async function getDiff() {
       outputDiff: true
     },
     scaleToSameSize: true,
+    ignoreLess: true,
     ignore: "antialiasing"
   };
 
